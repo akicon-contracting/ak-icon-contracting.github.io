@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AK Icon Trading & Contracting Co. W.L.L. | Qatar</title>
+    <meta name="description" content="AK Icon Trading & Contracting Co. W.L.L. provides professional trading, civil construction, MEP, technical services, and material procurement in Qatar.">
+    <link rel="canonical" href="https://ak-icon-contracting.github.io/">
+
+    <!-- Google Corporate Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --navy: #081220;
+            --navy-light: #0F1F38;
+            --navy-card: #162B4C;
+            --gold: #D4AF37;
+            --light-gold: #F3E5AB;
+            --white: #FFFFFF;
+            --text-gray: #E2E8F0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif !important;
+            font-style: normal !important;
+        }
+
+        body {
+            background-color: var(--navy);
+            color: var(--text-gray);
+            line-height: 1.6;
+        }
+
+        /* Top Header Wrapper */
+        .header-wrapper {
+            background-color: #EFE9DE; /* ব্যানারের পেছনের কালারের সাথে মিলিয়ে ব্যাকগ্রাউন্ড */
+            border-bottom: 3px solid var(--gold);
+            position: relative;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header-banner-img {
+            width: 100%;
+            height: auto;
+            max-height: 180px;
+            object-fit: contain;
+            display: block;
+        }
+
+        /* Language Toggle Button overlay on Header */
+        .lang-btn {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #081220;
+            color: #D4AF37;
+            border: 2px solid #D4AF37;
+            padding: 8px 18px;
+            font-weight: 800;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            z-index: 10;
+        }
+
+        [dir="rtl"] .lang-btn {
+            right: auto;
+            left: 20px;
+        }
+
+        .lang-btn:hover {
+            background-color: #D4AF37;
+            color: #081220;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(8, 18, 32, 0.92), rgba(8, 18, 32, 0.92)), url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+            color: var(--white);
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .hero h2 {
+            font-size: 1.8rem;
+            color: var(--gold);
+            margin-bottom: 15px;
+            line-height: 1.3;
+            font-weight: 800;
+        }
+
+        .hero p {
+            font-size: 1rem;
+            margin-bottom: 25px;
+            max-width: 850px;
+            margin-left: auto;
+            margin-right: auto;
+            color: var(--text-gray);
+            font-weight: 500;
+        }
+
+        /* Container & Grid */
+        .container {
+            padding: 45px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            color: var(--gold);
+            margin-bottom: 35px;
+            position: relative;
+            font-size: 1.6rem;
+            font-weight: 800;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: var(--gold);
+            margin: 10px auto 0;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+        }
+
+        @media(min-width: 768px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .card {
+            background: var(--navy-card);
+            border-top: 4px solid var(--gold);
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+            border-left: 1px solid rgba(212, 175, 55, 0.15);
+            border-right: 1px solid rgba(212, 175, 55, 0.15);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+        }
+
+        .card h3 {
+            color: var(--gold);
+            margin-bottom: 15px;
+            font-size: 1.25rem;
+            font-weight: 800;
+        }
+
+        .card ul {
+            list-style-type: none;
+        }
+
+        .card ul li {
+            padding: 8px 0;
+            position: relative;
+            padding-left: 24px;
+            font-size: 0.95rem;
+            color: var(--text-gray);
+            font-weight: 600;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+
+        [dir="rtl"] .card ul li {
+            padding-left: 0;
+            padding-right: 24px;
+        }
+
+        .card ul li::before {
+            content: '✓';
+            color: var(--gold);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        [dir="rtl"] .card ul li::before {
+            left: auto;
+            right: 0;
+        }
+
+        /* Contact Section */
+        .contact-box {
+            background: var(--navy-light);
+            color: var(--white);
+            padding: 40px 25px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+        }
+
+        .contact-box h3 {
+            color: var(--gold);
+            margin-bottom: 20px;
+            font-size: 1.4rem;
+            font-weight: 800;
+        }
+
+        .contact-info p {
+            margin: 12px 0;
+            font-size: 1rem;
+            color: var(--text-gray);
+            font-weight: 600;
+        }
+
+        .contact-info a {
+            color: var(--light-gold);
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        footer {
+            background: #040a12;
+            color: #888;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.85rem;
+            border-top: 1px solid rgba(212, 175, 55, 0.1);
+        }
+
+        @media(max-width: 600px) {
+            .lang-btn {
+                padding: 5px 10px;
+                font-size: 0.75rem;
+                right: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Banner Section -->
+    <header class="header-wrapper">
+        <div class="header-container">
+            <img src="header-banner.png" alt="AK Icon Trading & Contracting Co. W.L.L. Banner" class="header-banner-img">
+            <button class="lang-btn" onclick="toggleLanguage()" id="lang-toggle-btn">العربية</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2 id="hero-title">Premier Trading & Contracting Solutions in Qatar</h2>
+        <p id="hero-subtitle">Delivering high-quality civil contracting, MEP technical support, material procurement, and commercial supply solutions across Qatar.</p>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <section>
+            <h2 class="section-title" id="about-title">About Us</h2>
+            <p id="about-desc" style="text-align: center; max-width: 850px; margin: 0 auto 40px; font-size: 1rem; color: var(--text-gray);">
+                AK Icon Trading & Contracting Co. W.L.L. is a Qatar-registered corporate entity in Doha. We specialize in comprehensive commercial trading, building material supply, MEP support, and civil contracting services tailored for infrastructure and construction projects in Qatar.
+            </p>
+        </section>
+
+        <!-- Services Grid -->
+        <section>
+            <h2 class="section-title" id="services-title">Our Capabilities</h2>
+            <div class="grid">
+                
+                <!-- Trading -->
+                <div class="card">
+                    <h3 id="s1-title">Commercial Trading & Supply</h3>
+                    <ul>
+                        <li id="s1-1">Building & Construction Materials</li>
+                        <li id="s1-2">MEP & Electrical Supplies</li>
+                        <li id="s1-3">Safety & Industrial Equipment</li>
+                        <li id="s1-4">Hardware & Tools Procurement</li>
+                    </ul>
+                </div>
+
+                <!-- Contracting -->
+                <div class="card">
+                    <h3 id="s2-title">Civil & General Contracting</h3>
+                    <ul>
+                        <li id="s2-1">General Civil Works</li>
+                        <li id="s2-2">Structural & Masonry Works</li>
+                        <li id="s2-3">Commercial Fit-Out & Renovations</li>
+                        <li id="s2-4">Site Preparation & Support</li>
+                    </ul>
+                </div>
+
+                <!-- Technical MEP -->
+                <div class="card">
+                    <h3 id="s3-title">MEP Technical Support</h3>
+                    <ul>
+                        <li id="s3-1">Electrical Installation Support</li>
+                        <li id="s3-2">Plumbing & Piping Support</li>
+                        <li id="s3-3">HVAC Ducting & Fittings</li>
+                        <li id="s3-4">Sub-contracting Assistance</li>
+                    </ul>
+                </div>
+
+                <!-- Operations -->
+                <div class="card">
+                    <h3 id="s4-title">Technical Support & Operations</h3>
+                    <ul>
+                        <li id="s4-1">Skilled Technical Manpower Support</li>
+                        <li id="s4-2">Site Operation Management</li>
+                        <li id="s4-3">Commercial Facility Support</li>
+                        <li id="s4-4">Project Maintenance Services</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section style="margin-top: 50px;">
+            <div class="contact-box">
+                <h3 id="contact-title">Contact & Business Enquiries</h3>
+                <div class="contact-info">
+                    <p><strong><span id="c-company">AK Icon Trading & Contracting Co. W.L.L.</span></strong></p>
+                    <p>📍 <span id="c-location">Doha, Qatar</span></p>
+                    <p>📧 Email: <a href="mailto:info.akicon.qatar@gmail.com">info.akicon.qatar@gmail.com</a></p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 AK Icon Trading & Contracting Co. W.L.L. Doha, Qatar. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Multilingual Script -->
+    <script>
+        const content = {
+            en: {
+                langBtn: "العربية",
+                heroTitle: "Premier Trading & Contracting Solutions in Qatar",
+                heroSubtitle: "Delivering high-quality civil contracting, MEP technical support, material procurement, and commercial supply solutions across Qatar.",
+                aboutTitle: "About Us",
+                aboutDesc: "AK Icon Trading & Contracting Co. W.L.L. is a Qatar-registered corporate entity in Doha. We specialize in comprehensive commercial trading, building material supply, MEP support, and civil contracting services tailored for infrastructure and construction projects in Qatar.",
+                servicesTitle: "Our Capabilities",
+                s1Title: "Commercial Trading & Supply",
+                s1_1: "Building & Construction Materials", s1_2: "MEP & Electrical Supplies", s1_3: "Safety & Industrial Equipment", s1_4: "Hardware & Tools Procurement",
+                s2Title: "Civil & General Contracting",
+                s2_1: "General Civil Works", s2_2: "Structural & Masonry Works", s2_3: "Commercial Fit-Out & Renovations", s2_4: "Site Preparation & Support",
+                s3Title: "MEP Technical Support",
+                s3_1: "Electrical Installation Support", s3_2: "Plumbing & Piping Support", s3_3: "HVAC Ducting & Fittings", s3_4: "Sub-contracting Assistance",
+                s4Title: "Technical Support & Operations",
+                s4_1: "Skilled Technical Manpower Support", s4_2: "Site Operation Management", s4_3: "Commercial Facility Support", s4_4: "Project Maintenance Services",
+                contactTitle: "Contact & Business Enquiries",
+                cCompany: "AK Icon Trading & Contracting Co. W.L.L.",
+                cLocation: "Doha, Qatar"
+            },
+            ar: {
+                langBtn: "English",
+                heroTitle: "حلول التجارة والمقاولات الرائدة في قطر",
+                heroSubtitle: "تقديم خدمات المقاولات المدنية عالية الجودة، الدعم الفني الكهروميكانيكي، توريد المواد، والحلول التجارية في قطر.",
+                aboutTitle: "من نحن",
+                aboutDesc: "شركة اي কে আইকন للتجارة والمقاولات ذ.م.م هي شركة مسجلة في قطر ومقرها الدوحة. نحن متخصصون في التجارة التجارية، توريد مواد البناء، دعم الأعمال الكهروميكانيكية، والمقاولات المدنية.",
+                servicesTitle: "قدراتنا وخدماتنا",
+                s1Title: "التجارة والتوريدات التجارية",
+                s1_1: "مواد البناء والإنشاءات", s1_2: "مستلزمات الكهرباء والكهروميكانيك", s1_3: "معدات السلامة والمعدات الصناعية", s1_4: "توريد الأدوات والأجهزة",
+                s2Title: "المقاولات المدنية والعامة",
+                s2_1: "أعمال البناء المدني العام", s2_2: "الأعمال الهيكلية والبناء", s2_3: "التجهيزات الديكورية والتجديد التجاري", s2_4: "تجهيز المواقع والدعم",
+                s3Title: "الدعم الفني الكهروميكانيكي (MEP)",
+                s3_1: "دعم التركيبات الكهربائية", s3_2: "دعم أجهزة السباكة والأنابيب", s3_3: "تركيبات التكييف (HVAC)", s3_4: "خدمات المقاولات الفرعية",
+                s4Title: "الدعم الفني والعمليات",
+                s4_1: "دعم العمالة الفنية الماهرة", s4_2: "إدارة عمليات الموقع", s4_3: "دعم المنشآت التجارية", s4_4: "خدمات صيانة المشاريع",
+                contactTitle: "التواصل والاستفسارات التجارية",
+                cCompany: "شركة ای কে আইকন للتجارة والمقاولات ذ.م.م",
+                cLocation: "الدوحة، قطر"
+            }
+        };
+
+        let currentLang = 'en';
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'en' ? 'ar' : 'en';
+            document.documentElement.lang = currentLang;
+            document.documentElement.dir = currentLang === 'ar' ? 'rtl' : 'ltr';
+
+            const l = content[currentLang];
+            document.getElementById('lang-toggle-btn').innerText = l.langBtn;
+            document.getElementById('hero-title').innerText = l.heroTitle;
+            document.getElementById('hero-subtitle').innerText = l.heroSubtitle;
+            document.getElementById('about-title').innerText = l.aboutTitle;
+            document.getElementById('about-desc').innerText = l.aboutDesc;
+            document.getElementById('services-title').innerText = l.servicesTitle;
+
+            document.getElementById('s1-title').innerText = l.s1Title;
+            document.getElementById('s1-1').innerText = l.s1_1;
+            document.getElementById('s1-2').innerText = l.s1_2;
+            document.getElementById('s1-3').innerText = l.s1_3;
+            document.getElementById('s1-4').innerText = l.s1_4;
+
+            document.getElementById('s2-title').innerText = l.s2Title;
+            document.getElementById('s2-1').innerText = l.s2_1;
+            document.getElementById('s2-2').innerText = l.s2_2;
+            document.getElementById('s2-3').innerText = l.s2_3;
+            document.getElementById('s2-4').innerText = l.s2_4;
+
+            document.getElementById('s3-title').innerText = l.s3Title;
+            document.getElementById('s3-1').innerText = l.s3_1;
+            document.getElementById('s3-2').innerText = l.s3_2;
+            document.getElementById('s3-3').innerText = l.s3_3;
+            document.getElementById('s3-4').innerText = l.s3_4;
+
+            document.getElementById('s4-title').innerText = l.s4Title;
+            document.getElementById('s4-1').innerText = l.s4_1;
+            document.getElementById('s4-2').innerText = l.s4_2;
+            document.getElementById('s4-3').innerText = l.s4_3;
+            document.getElementById('s4-4').innerText = l.s4_4;
+
+            document.getElementById('contact-title').innerText = l.contactTitle;
+            document.getElementById('c-company').innerText = l.cCompany;
+            document.getElementById('c-location').innerText = l.cLocation;
+        }
+    </script>
+</body>
+</html>
